@@ -1,0 +1,58 @@
+.painel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 600px;
+    padding: 5px;
+    margin: 0;
+    border: 3px solid #e6eef3;
+    border-radius: 5px;
+
+}
+.titulo {
+    color: #E6EEF3;
+}
+.contador {
+    color: #E6EEF3;
+}
+
+.pergunta {
+    color: #e6eef3;
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.botao {
+    width: 190px;
+    margin: 5px;
+    border: 1px solid #E6EEF3;
+    color: #E6EEF3;
+    background: transparent;
+}
+
+.certo {
+    background: #10B981;
+}
+
+.errado {
+    background: #EF4444;
+}
+
+.painel_proximaPergunta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin-top: 10px;
+}
+
+.painel_proximaPergunta button {
+    background: transparent;
+    border: 1px solid #e6eef3;
+    color : #E6EEF3;
+    padding: 6px;
+}

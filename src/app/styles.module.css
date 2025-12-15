@@ -1,0 +1,15 @@
+.titulo {
+    color :#E6EEF3;
+    font-size: 4.3rem;
+}
+
+.botao_link {
+    background: #3B82F6;
+    color: #e6eef3;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.botao_link:hover {
+    background: #3474db;
+}
