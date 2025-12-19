@@ -1,7 +1,7 @@
 "use client";
 import styles from "./styles.module.css";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 export default function Quest() {
     const perguntas = [
         {
@@ -18,31 +18,36 @@ export default function Quest() {
         }
     ]
 
-    const router = useRouter();
     const [perguntaAtual, setPerguntaAtual] = useState(0);
     const [contador, setContador] = useState(5);
     const [respostaSelecionada, setRespostaSelecionada] = useState(null);
     const [mostrarOpcaoCorreta, setMostrarOpcaoCorreta] = useState(false);
     const [desabilitarBotao, setDesabilitarBotao] = useState(false);
+    const [numeroDeAcertos, setNumeroDeAcertos] = useState(0);
 
     const botaoProximaPergunta = () => {
-       if(perguntaAtual !== perguntas.length - 1)
-       {
-         return <button onClick={() => {
-            setPerguntaAtual(prev => prev + 1);
-            setMostrarOpcaoCorreta(false);
-            setDesabilitarBotao(false);
-            setRespostaSelecionada(null);
-            setContador(15);
-        }}>
-            Próxima pergunta
-        </button>
-       }
-       else
-       {
-        return <button onClick={() => router.push("/fim")}>Final do jogo</button>
-       }
+        if (perguntaAtual !== perguntas.length - 1) {
+            return <button className={styles.botaoProximaPergunta} onClick={() => {
+                setPerguntaAtual(prev => prev + 1);
+                setMostrarOpcaoCorreta(false);
+                setDesabilitarBotao(false);
+                setRespostaSelecionada(null);
+                setContador(15);
+            }}>
+                Próxima pergunta
+            </button>
+        }
+        else {
+            if (typeof window !== "undefined") {
+                window.sessionStorage.setItem("acertos", numeroDeAcertos.toString());
+
+            }
+
+            return <Link href={"/fim"}>Final do jogo</Link>
+        }
     }
+
+
 
     const contagemRegressiva = () => {
 
@@ -71,13 +76,13 @@ export default function Quest() {
         }
     }
 
-    contagemRegressiva();
-
     const revelarResposta = (opcao) => {
         if (mostrarOpcaoCorreta && opcao === perguntas[perguntaAtual].respostaSelecionada) {
             return styles.certo;
         }
     }
+    contagemRegressiva();
+
     return (
         <div className={` container d-flex flex-column p-0 m-0 align-items-center justify-content-center`}>
             <div className={`${styles.painel}`}>
@@ -87,7 +92,7 @@ export default function Quest() {
                     <h4 className={`${styles.pergunta}`}>{perguntas[perguntaAtual].titulo}</h4>
                     {<>
                         {perguntas[perguntaAtual].opcoes.map((opcao) =>
-                        
+
                             <button
                                 className={`${styles.botao} ${desabilitarBotao || contador === 0 ? "pe-none" : ""} ${revelarResposta(opcao)}`}
                                 key={opcao}
@@ -96,6 +101,7 @@ export default function Quest() {
                                     if (e.target.value === perguntas[perguntaAtual].respostaSelecionada) {
                                         setRespostaSelecionada(e.target.value);
                                         e.target.style.background = "#10B981";
+                                        setNumeroDeAcertos(prev => prev + 1);
                                     }
                                     else {
                                         setRespostaSelecionada(e.target.value);
@@ -104,7 +110,7 @@ export default function Quest() {
                                     }
 
                                     setDesabilitarBotao(true);
-                                    
+
                                 }}
                             >
                                 {opcao}
@@ -112,11 +118,11 @@ export default function Quest() {
                         )}
                         {verificarSeEstarCerto()}
                         {respostaSelecionada !== null && botaoProximaPergunta()}
-                        {contador === 0 && 
-                        <div className={styles.painel_proximaPergunta}>
-                            {<p className={styles.contador}>Tempo esgotado</p>}
-                            {botaoProximaPergunta()}
-                        </div>}
+                        {contador === 0 &&
+                            <div className={styles.painel_proximaPergunta}>
+                                <p className={styles.contador}>Tempo esgotado</p>
+                                {botaoProximaPergunta()}
+                            </div>}
                     </>}
 
 

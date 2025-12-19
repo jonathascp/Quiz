@@ -5,7 +5,7 @@ export default function Home() {
     <div className="container d-flex flex-column justify-content-center align-items-center">
       <h1 className={`${styles.titulo}`}>Quiz</h1>
       <Link href="/quests" className={`${styles.botao_link} border border-0 rounded-3 p-2`}>
-       Ir para as perguntas
+        Ir para as perguntas
       </Link>
     </div>
   )
