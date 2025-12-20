@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "titulo": "Quem foi o rei de Israel que pediu sabedoria a Deus em vez de riquezas?",
+    "opcoes": [
+      "Davi",
+      "Saul",
+      "Salomão",
+      "Ezequias"
+    ],
+    "respostaSelecionada": "Salomão"
+  },
+  {
+    "id": 2,
+    "titulo": "Em qual livro da Bíblia está registrado o Sermão do Monte?",
+    "opcoes": [
+      "Marcos",
+      "Mateus",
+      "Lucas",
+      "João"
+    ],
+    "respostaSelecionada": "Mateus"
+  },
+  {
+    "id": 3,
+    "titulo": "Quantos dias Jesus jejuou no deserto antes de ser tentado?",
+    "opcoes": [
+      "7 dias",
+      "21 dias",
+      "30 dias",
+      "40 dias"
+    ],
+    "respostaSelecionada": "40 dias"
+  },
+  {
+    "id": 4,
+    "titulo": "Qual profeta foi levado aos céus em um redemoinho?",
+    "opcoes": [
+      "Isaías",
+      "Jeremias",
+      "Elias",
+      "Eliseu"
+    ],
+    "respostaSelecionada": "Elias"
+  },
+  {
+    "id": 5,
+    "titulo": "Quem escreveu a maior parte dos Salmos?",
+    "opcoes": [
+      "Salomão",
+      "Asafe",
+      "Davi",
+      "Moisés"
+    ],
+    "respostaSelecionada": "Davi"
+  },
+  {
+    "id": 6,
+    "titulo": "Qual apóstolo negou Jesus três vezes antes do canto do galo?",
+    "opcoes": [
+      "João",
+      "Pedro",
+      "Tiago",
+      "André"
+    ],
+    "respostaSelecionada": "Pedro"
+  },
+  {
+    "id": 7,
+    "titulo": "Em qual livro se encontra a narrativa da criação do mundo?",
+    "opcoes": [
+      "Êxodo",
+      "Gênesis",
+      "Levítico",
+      "Números"
+    ],
+    "respostaSelecionada": "Gênesis"
+  },
+  {
+    "id": 8,
+    "titulo": "Quem foi lançado na cova dos leões por continuar orando a Deus?",
+    "opcoes": [
+      "José",
+      "Daniel",
+      "Ester",
+      "Neemias"
+    ],
+    "respostaSelecionada": "Daniel"
+  },
+  {
+    "id": 9,
+    "titulo": "Quantos livros compõem o Novo Testamento?",
+    "opcoes": [
+      "25",
+      "26",
+      "27",
+      "28"
+    ],
+    "respostaSelecionada": "27"
+  },
+  {
+    "id": 10,
+    "titulo": "Qual foi o primeiro milagre realizado por Jesus, segundo o evangelho de João?",
+    "opcoes": [
+      "Multiplicação dos pães",
+      "Cura de um leproso",
+      "Transformação da água em vinho",
+      "Ressurreição de Lázaro"
+    ],
+    "respostaSelecionada": "Transformação da água em vinho"
+  }
+]

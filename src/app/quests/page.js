@@ -3,20 +3,6 @@ import styles from "./styles.module.css";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 export default function Quest() {
-    const perguntas = [
-        {
-            id: 1,
-            titulo: "Qual a capital da França?",
-            opcoes: ["Paris", "Londres", "Berlim", "Madrid"],
-            respostaSelecionada: "Paris"
-        },
-        {
-            id: 2,
-            titulo: "Quantos planetas existem no sistema solar?",
-            opcoes: ["7", "8", "9", "10"],
-            respostaSelecionada: "8"
-        }
-    ]
 
     const [perguntaAtual, setPerguntaAtual] = useState(0);
     const [contador, setContador] = useState(5);
@@ -24,6 +10,8 @@ export default function Quest() {
     const [mostrarOpcaoCorreta, setMostrarOpcaoCorreta] = useState(false);
     const [desabilitarBotao, setDesabilitarBotao] = useState(false);
     const [numeroDeAcertos, setNumeroDeAcertos] = useState(0);
+
+    
 
     const botaoProximaPergunta = () => {
         if (perguntaAtual !== perguntas.length - 1) {
