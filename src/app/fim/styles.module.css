@@ -13,4 +13,11 @@
 .painel {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pontuacao {
+    color: #E6EEF3;
+    font-size: bold;
 }

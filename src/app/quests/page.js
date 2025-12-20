@@ -6,7 +6,7 @@ import perguntas from "../perguntas.json";
 export default function Quest() {
 
     const [perguntaAtual, setPerguntaAtual] = useState(0);
-    const [contador, setContador] = useState(5);
+    const [contador, setContador] = useState(15);
     const [respostaSelecionada, setRespostaSelecionada] = useState(null);
     const [mostrarOpcaoCorreta, setMostrarOpcaoCorreta] = useState(false);
     const [desabilitarBotao, setDesabilitarBotao] = useState(false);
