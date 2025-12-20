@@ -2,6 +2,7 @@
 import styles from "./styles.module.css";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import perguntas from "../perguntas.json";
 export default function Quest() {
 
     const [perguntaAtual, setPerguntaAtual] = useState(0);
