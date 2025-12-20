@@ -29,7 +29,10 @@ export default function fimDeJogo() {
             <div className={styles.painel}>
                 <h1 className={styles.titulo}>Fim de jogo.</h1>
                 <p className={styles.pontuacao}>Você acerto {pontos} de {perguntas.length}</p>
-                <button className={styles.botaoVoltar} onClick={() => router.push("/quests")}>voltar ao jogo</button>
+                <button className={styles.botaoVoltar} onClick={() => {
+                    router.push("/quests")
+                    setPontos(0);
+                } }>voltar ao jogo</button>
             </div>
         </div>
 
