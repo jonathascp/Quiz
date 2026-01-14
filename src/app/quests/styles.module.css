@@ -56,3 +56,11 @@
     color : #E6EEF3;
     padding: 6px;
 }
+
+.botaoFimDoJogo {
+    background: transparent;
+    border: 1px solid #e6eef3;
+    color : #E6EEF3;
+    padding: 6px;
+    text-decoration: none;
+}

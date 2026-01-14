@@ -10,9 +10,7 @@ export default function Quest() {
     const [respostaSelecionada, setRespostaSelecionada] = useState(null);
     const [mostrarOpcaoCorreta, setMostrarOpcaoCorreta] = useState(false);
     const [desabilitarBotao, setDesabilitarBotao] = useState(false);
-    const [numeroDeAcertos, setNumeroDeAcertos] = useState(0);
-
-    
+    const [numeroDeAcertos, setNumeroDeAcertos] = useState(0);   
 
     const botaoProximaPergunta = () => {
         if (perguntaAtual !== perguntas.length - 1) {
@@ -32,12 +30,9 @@ export default function Quest() {
 
             }
 
-            return <Link href={"/fim"}>Final do jogo</Link>
+            return <Link className={styles.botaoFimDoJogo} href={"/fim"}>Fim do jogo</Link>
         }
     }
-
-
-
     const contagemRegressiva = () => {
 
         useEffect(() => {
