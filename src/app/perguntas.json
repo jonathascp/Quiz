@@ -1,112 +1,146 @@
 [
   {
     "id": 1,
-    "titulo": "Quem foi o rei de Israel que pediu sabedoria a Deus em vez de riquezas?",
-    "opcoes": [
-      "Davi",
-      "Saul",
-      "Salomão",
-      "Ezequias"
-    ],
-    "respostaSelecionada": "Salomão"
+    "titulo": "Mateus deixa bem claro que gerações se passam até a vinda de Jesus. Quais foram os dois primeiros pilares antes de Jesus citados por Mateus?",
+    "opcoes": ["Adão e Moisés", "Abraão e Davi", "Jacó e José"],
+    "respostaSelecionada": "Abraão e Davi"
   },
   {
     "id": 2,
-    "titulo": "Em qual livro da Bíblia está registrado o Sermão do Monte?",
-    "opcoes": [
-      "Marcos",
-      "Mateus",
-      "Lucas",
-      "João"
-    ],
-    "respostaSelecionada": "Mateus"
+    "titulo": "Em Mateus é relatado que um homem vai para o Egito e lá é visitado em sonho. Quem é esse homem, o nome de seu pai e o nome de seu filho?",
+    "opcoes": ["Jacó - José - Jesus", "Jacó - José - Efraim", "Jacó - José - Manassés"],
+    "respostaSelecionada": "Jacó - José - Jesus"
   },
   {
     "id": 3,
-    "titulo": "Quantos dias Jesus jejuou no deserto antes de ser tentado?",
-    "opcoes": [
-      "7 dias",
-      "21 dias",
-      "30 dias",
-      "40 dias"
-    ],
-    "respostaSelecionada": "40 dias"
+    "titulo": "É deixado claro que o batismo de João era para arrependimento. Com que propósito Jesus foi batizado?",
+    "opcoes": ["Para ser exemplo", "Para cumprir a justiça", "Para demonstrar autoridade de João"],
+    "respostaSelecionada": "Para cumprir a justiça"
   },
   {
     "id": 4,
-    "titulo": "Qual profeta foi levado aos céus em um redemoinho?",
-    "opcoes": [
-      "Isaías",
-      "Jeremias",
-      "Elias",
-      "Eliseu"
-    ],
-    "respostaSelecionada": "Elias"
-  },
-  {
-    "id": 5,
-    "titulo": "Quem escreveu a maior parte dos Salmos?",
-    "opcoes": [
-      "Salomão",
-      "Asafe",
-      "Davi",
-      "Moisés"
-    ],
-    "respostaSelecionada": "Davi"
-  },
-  {
-    "id": 6,
-    "titulo": "Qual apóstolo negou Jesus três vezes antes do canto do galo?",
-    "opcoes": [
-      "João",
-      "Pedro",
-      "Tiago",
-      "André"
-    ],
+    "titulo": "Qual dos apóstolos é o primeiro a ser avistado por Jesus?",
+    "opcoes": ["Pedro", "Tiago", "João"],
     "respostaSelecionada": "Pedro"
   },
   {
+    "id": 5,
+    "titulo": "Entre as bem-aventuranças, qual delas tem por recompensa ver a Deus?",
+    "opcoes": ["Ser pacífico", "Ser misericordioso", "Ser limpo de coração"],
+    "respostaSelecionada": "Ser limpo de coração"
+  },
+  {
+    "id": 6,
+    "titulo": "Após a oração do Pai Nosso, qual aspecto Jesus reforça e desenvolve?",
+    "opcoes": ["O Reino", "O Perdão", "A Santidade"],
+    "respostaSelecionada": "O Perdão"
+  },
+  {
     "id": 7,
-    "titulo": "Em qual livro se encontra a narrativa da criação do mundo?",
-    "opcoes": [
-      "Êxodo",
-      "Gênesis",
-      "Levítico",
-      "Números"
-    ],
-    "respostaSelecionada": "Gênesis"
+    "titulo": "O que fez com que a multidão se admirasse com a doutrina ensinada por Jesus?",
+    "opcoes": ["O fato de ser com amor", "O fato de ser com temor", "O fato de ser com autoridade"],
+    "respostaSelecionada": "O fato de ser com autoridade"
   },
   {
     "id": 8,
-    "titulo": "Quem foi lançado na cova dos leões por continuar orando a Deus?",
-    "opcoes": [
-      "José",
-      "Daniel",
-      "Ester",
-      "Neemias"
-    ],
-    "respostaSelecionada": "Daniel"
+    "titulo": "Que profeta é citado em Mateus capítulo 8?",
+    "opcoes": ["Isaías", "Jeremias", "Ezequiel"],
+    "respostaSelecionada": "Isaías"
   },
   {
     "id": 9,
-    "titulo": "Quantos livros compõem o Novo Testamento?",
-    "opcoes": [
-      "25",
-      "26",
-      "27",
-      "28"
-    ],
-    "respostaSelecionada": "27"
+    "titulo": "Que grupo de pessoas dizia que Jesus expulsava os demônios pelo príncipe dos demônios?",
+    "opcoes": ["Publicanos", "Fariseus", "Escribas"],
+    "respostaSelecionada": "Fariseus"
   },
   {
     "id": 10,
-    "titulo": "Qual foi o primeiro milagre realizado por Jesus, segundo o evangelho de João?",
-    "opcoes": [
-      "Multiplicação dos pães",
-      "Cura de um leproso",
-      "Transformação da água em vinho",
-      "Ressurreição de Lázaro"
-    ],
-    "respostaSelecionada": "Transformação da água em vinho"
+    "titulo": "Jesus diz em certo momento que não veio trazer a paz, mas sim o quê?",
+    "opcoes": ["Lei", "Espada", "Salvação"],
+    "respostaSelecionada": "Espada"
+  },
+  {
+    "id": 11,
+    "titulo": "Em resposta a João, o que Jesus diz que era feito aos pobres?",
+    "opcoes": ["Mudado a sorte", "Era feito a justiça", "Era pregado o evangelho"],
+    "respostaSelecionada": "Era pregado o evangelho"
+  },
+  {
+    "id": 12,
+    "titulo": "Após pedirem um sinal a Jesus, como Ele qualifica aquela geração?",
+    "opcoes": ["Má e adúltera", "Incrédula e perversa", "Pecadora e teimosa"],
+    "respostaSelecionada": "Má e adúltera"
+  },
+  {
+    "id": 13,
+    "titulo": "Na parábola do semeador, a boa terra é comparada a que tipo de pessoa?",
+    "opcoes": ["Ao que entende a palavra", "Ao que tem fé na palavra", "Ao que se arrepende pela palavra"],
+    "respostaSelecionada": "Ao que entende a palavra"
+  },
+  {
+    "id": 14,
+    "titulo": "Depois da multiplicação dos pães, em que período da noite Jesus encontrou os discípulos no mar?",
+    "opcoes": ["Perto da meia-noite", "Quarta vigília da noite", "Hora nona"],
+    "respostaSelecionada": "Quarta vigília da noite"
+  },
+  {
+    "id": 15,
+    "titulo": "Na segunda multiplicação, quantos cestos sobraram após a multidão ser saciada?",
+    "opcoes": ["7", "5", "12"],
+    "respostaSelecionada": "7"
+  },
+  {
+    "id": 16,
+    "titulo": "Quando Jesus pergunta quem os homens dizem ser Ele, além de João Batista e Elias, quem é citado?",
+    "opcoes": ["Jeremias", "Isaías", "Moisés"],
+    "respostaSelecionada": "Jeremias"
+  },
+  {
+    "id": 17,
+    "titulo": "Qual resposta Jesus dá para explicar por que os discípulos não puderam expulsar o demônio?",
+    "opcoes": ["Incredulidade", "Falta de jejum e oração", "Porque tiveram medo"],
+    "respostaSelecionada": "Incredulidade"
+  },
+  {
+    "id": 18,
+    "titulo": "Quantas vezes Jesus disse que deveríamos perdoar aqueles que pecaram contra nós?",
+    "opcoes": ["740", "490", "560"],
+    "respostaSelecionada": "490"
+  },
+  {
+    "id": 19,
+    "titulo": "Quantos tipos de eunucos Jesus disse que existem?",
+    "opcoes": ["1", "2", "3"],
+    "respostaSelecionada": "3"
+  },
+  {
+    "id": 20,
+    "titulo": "Quanto tempo trabalharam os últimos trabalhadores na vinha e receberam o mesmo que os primeiros?",
+    "opcoes": ["3 horas", "2 horas", "1 hora"],
+    "respostaSelecionada": "1 hora"
+  },
+  {
+    "id": 21,
+    "titulo": "Depois de sentir fome, que árvore Jesus encontrou apenas com folhas?",
+    "opcoes": ["Oliveira", "Videira", "Figueira"],
+    "respostaSelecionada": "Figueira"
+  },
+  {
+    "id": 22,
+    "titulo": "Na parábola das bodas, por que certo homem foi retirado da festa?",
+    "opcoes": ["Desprezou a festa", "Não tinha convite", "Não tinha vestes nupciais"],
+    "respostaSelecionada": "Não tinha vestes nupciais"
+  },
+  {
+    "id": 23,
+    "titulo": "Que cidade Jesus menciona por matar seus profetas?",
+    "opcoes": ["Nínive", "Jericó", "Jerusalém"],
+    "respostaSelecionada": "Jerusalém"
+  },
+  {
+    "id": 24,
+    "titulo": "O que fará com que o amor de muitos esfrie?",
+    "opcoes": ["O inverno", "O ar condicionado no 17", "O aumento da iniquidade"],
+    "respostaSelecionada": "O aumento da iniquidade"
   }
 ]
