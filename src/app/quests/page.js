@@ -34,7 +34,7 @@ export default function Quest() {
 
             }
 
-            return <Link className={styles.botaoFimDoJogo} href={"/fim"}>Fim do jogo</Link>
+            return <Link className={styles.botaoFimDoJogo} href={"/fimDeJogo"}>Fim do jogo</Link>
         }
     }
     const contagemRegressiva = () => {

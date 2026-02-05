@@ -247,7 +247,168 @@
     },
     {
       "tema": "Marcos",
-      "perguntas": []
+      "perguntas": [
+        {
+          "id": 1,
+          "titulo": "Como Jesus é apresentado por Marcos no evangelho escrito pelo mesmo? (Mc 1:1)",
+          "opcoes": [
+            "Rei dos judeus",
+            "Filho de Davi",
+            "Filho de Deus"
+          ],
+          "respostaSelecionada": "Filho de Deus"
+        },
+        {
+          "id": 2,
+          "titulo": "O que fez com que Jesus perdoasse o paralítico descido por cordas? (Mc 2:5)",
+          "opcoes": [
+            "A situação do paralítico",
+            "A fé dos amigos",
+            "Os escribas que estavam arrazoando"
+          ],
+          "respostaSelecionada": "A fé dos amigos"
+        },
+        {
+          "id": 3,
+          "titulo": "O que Jesus pediu aos discípulos para sair da opressão da multidão? (Mc 3:9)",
+          "opcoes": [
+            "Comida",
+            "Barco",
+            "Pedia pra ir ao monte"
+          ],
+          "respostaSelecionada": "Barco"
+        },
+        {
+          "id": 4,
+          "titulo": "Com que semente é comparado o reino?",
+          "opcoes": [
+            "Coentro",
+            "Mostarda",
+            "Trigo"
+          ],
+          "respostaSelecionada": "Mostarda"
+        },
+        {
+          "id": 5,
+          "titulo": "Qual o nome da filha de Jairo?",
+          "opcoes": [
+            "Talita",
+            "Talia",
+            "Não menciona"
+          ],
+          "respostaSelecionada": "Não menciona"
+        },
+        {
+          "id": 6,
+          "titulo": "O que Jesus pede que seus discípulos levem quando os doze são enviados?",
+          "opcoes": [
+            "Cajado",
+            "Sandália",
+            "Túnica"
+          ],
+          "respostaSelecionada": "Cajado"
+        },
+        {
+          "id": 7,
+          "titulo": "A contaminação do homem vem por onde?",
+          "opcoes": [
+            "Mãos sujas ao comer",
+            "Ambientes sujos",
+            "De dentro do homem"
+          ],
+          "respostaSelecionada": "De dentro do homem"
+        },
+        {
+          "id": 8,
+          "titulo": "Como um homem que era cego via os homens no processo de cura? (Mc 8)",
+          "opcoes": [
+            "Bichos",
+            "Árvores",
+            "Pedras"
+          ],
+          "respostaSelecionada": "Árvores"
+        },
+        {
+          "id": 9,
+          "titulo": "Os discípulos proibiram um homem de fazer o quê no nome de Jesus?",
+          "opcoes": [
+            "Batizar",
+            "Curar",
+            "Expulsar demônios"
+          ],
+          "respostaSelecionada": "Expulsar demônios"
+        },
+        {
+          "id": 10,
+          "titulo": "Por que motivo Jesus diz que Moisés autorizou o divórcio?",
+          "opcoes": [
+            "Por causa da injustiça do povo",
+            "Pela dureza do coração do povo",
+            "Por causa da confusão que estava tendo ali"
+          ],
+          "respostaSelecionada": "Pela dureza do coração do povo"
+        },
+        {
+          "id": 11,
+          "titulo": "Perto de qual monte Jesus faz menção ao jumentinho para sua entrada em Jerusalém?",
+          "opcoes": [
+            "Sinai",
+            "Carmelo",
+            "Oliveira"
+          ],
+          "respostaSelecionada": "Oliveira"
+        },
+        {
+          "id": 12,
+          "titulo": "Qual o nome do grupo de pessoas que não criam na ressurreição?",
+          "opcoes": [
+            "Fariseus",
+            "Saduceus",
+            "Macabeus"
+          ],
+          "respostaSelecionada": "Saduceus"
+        },
+        {
+          "id": 13,
+          "titulo": "Falando sobre o princípio das dores, somos aconselhados a orar para que nossa fuga não seja em que estação?",
+          "opcoes": [
+            "Verão",
+            "Outono",
+            "Inverno"
+          ],
+          "respostaSelecionada": "Inverno"
+        },
+        {
+          "id": 14,
+          "titulo": "Depois que ressuscitasse, Jesus conduziria os discípulos para onde?",
+          "opcoes": [
+            "Judeia",
+            "Galileia",
+            "Jerusalém"
+          ],
+          "respostaSelecionada": "Galileia"
+        },
+        {
+          "id": 15,
+          "titulo": "Em que hora durante a crucificação de Cristo houve trevas?",
+          "opcoes": [
+            "Hora terceira",
+            "Hora sexta",
+            "Hora nona"
+          ],
+          "respostaSelecionada": "Hora sexta"
+        },
+        {
+          "id": 16,
+          "titulo": "A quem apareceu primeiro Jesus após a sua ressurreição?",
+          "opcoes": [
+            "Maria de Betânia",
+            "Maria Braga",
+            "Maria Madalena"
+          ],
+          "respostaSelecionada": "Maria Madalena"
+        }
+      ]
     }
   ]
 }
