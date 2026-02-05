@@ -1,0 +1,21 @@
+.botao {
+    background: none;
+    padding: 5px 15px;
+    border: 2px solid #E6EEF3;
+}
+
+.botao:hover {
+    background: #111827;
+}
+
+.botao > a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #E6EEF3;
+}
+
+.botao > a:hover {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #c7cccf;
+}

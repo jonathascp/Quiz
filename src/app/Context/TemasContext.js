@@ -1,11 +1,10 @@
 "use client";
 
-const { createContext, useState, useContext } = require("react");
-
+import { createContext, useState, useContext } from "react";
 const TemasContext = createContext();
 
 export const TemasProvider = ({children}) => {
-    const [tema,setTema] = useState(null);
+    const [tema,setTema] = useState("");
 
     return (
         <TemasContext.Provider value={{tema, setTema}}>

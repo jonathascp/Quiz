@@ -12,12 +12,12 @@ export default function Quest() {
     const [mostrarOpcaoCorreta, setMostrarOpcaoCorreta] = useState(false);
     const [desabilitarBotao, setDesabilitarBotao] = useState(false);
     const [numeroDeAcertos, setNumeroDeAcertos] = useState(0);
+    const { tema } = useTema();
 
-    const {tema} = useTema();
-    console.log(perguntas.temas.Mateus[perguntaAtual].opcoes);
+    const temaSelecionado = perguntas.temas.find((t)=> t.tema === tema);
     
     const botaoProximaPergunta = () => {
-        if (perguntaAtual !== perguntas.temas.Mateus.length - 1) {
+        if (perguntaAtual !== temaSelecionado.perguntas.length - 1) {
             return <button className={styles.botaoProximaPergunta} onClick={() => {
                 setPerguntaAtual(prev => prev + 1);
                 setMostrarOpcaoCorreta(false);
@@ -53,8 +53,8 @@ export default function Quest() {
     }
 
     const verificarSeEstarCerto = () => {
-        if (respostaSelecionada !== null) {
-            if (respostaSelecionada === perguntas.temas.Mateus[perguntaAtual].respostaSelecionada) {
+        if (respostaSelecionada !== null) { 
+            if (respostaSelecionada === temaSelecionado.perguntas[perguntaAtual].respostaSelecionada) {
                 return <p className={styles.contador}>Resposta correta !</p>
             }
             else {
@@ -64,8 +64,8 @@ export default function Quest() {
         }
     }
 
-    const revelarResposta = (opcao) => {
-        if (mostrarOpcaoCorreta && opcao === perguntas.temas.Mateus[perguntaAtual].respostaSelecionada) {
+    const revelarResposta = (opcao) => {     
+        if (mostrarOpcaoCorreta && opcao === temaSelecionado.perguntas[perguntaAtual].respostaSelecionada) {
             return styles.certo;
         }
     }
@@ -74,19 +74,19 @@ export default function Quest() {
     return (
         <div className={` container d-flex flex-column p-0 m-0 align-items-center justify-content-center`}>
             <div className={`${styles.painel}`}>
-                <h1 className={`${styles.titulo}`}>Pergunta Nº{perguntas.temas.Mateus[perguntaAtual].id}</h1>
+                <h1 className={`${styles.titulo}`}>Pergunta Nº{temaSelecionado.perguntas[perguntaAtual].id}</h1>
                 <p className={`${styles.contador}`}>{contador}</p>
                 <div className="container d-flex flex-column p-0 m-0 align-items-center justify-content-center">
-                    <h4 className={`${styles.pergunta}`}>{perguntas.temas.Mateus[perguntaAtual].titulo}</h4>
-                    {<>
-                        {perguntas.temas.Mateus[perguntaAtual].opcoes.map((opcao) =>
+                    <h4 className={`${styles.pergunta}`}>{temaSelecionado.perguntas[perguntaAtual].titulo}</h4>
+                    {<> 
+                        {temaSelecionado.perguntas[perguntaAtual].opcoes.map((opcao) =>
 
                             <button
                                 className={`${styles.botao} ${desabilitarBotao || contador === 0 ? "pe-none" : ""} ${revelarResposta(opcao)}`}
                                 key={opcao}
                                 value={opcao}
                                 onClick={e => {
-                                    if (e.target.value === perguntas.temas.Mateus[perguntaAtual].respostaSelecionada) {
+                                    if (e.target.value === temaSelecionado.perguntas[perguntaAtual].respostaSelecionada) {
                                         setRespostaSelecionada(e.target.value);
                                         e.target.style.background = "#10B981";
                                         setNumeroDeAcertos(prev => prev + 1);
