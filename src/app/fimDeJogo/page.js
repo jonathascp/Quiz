@@ -9,7 +9,7 @@ import { useTema } from "../Context/TemasContext";
 export default function fimDeJogo() {
     const { tema } = useTema();
     
-      const temaSelecionado = perguntas.temas.find((t) => t.tema === tema);
+      const temaSelecionado = perguntas.temas.find((t) => t.tema === tema) || null;
       
 
     const [pontos,setPontos] = useState(0);
