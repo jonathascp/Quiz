@@ -8,9 +8,12 @@ import { useTema } from "../Context/TemasContext";
 
 export default function fimDeJogo() {
     const { tema } = useTema();
-    const temaSelecionado = perguntas.temas.find((t) => t.tema === tema);
+    
+      const temaSelecionado = perguntas.temas.find((t) => t.tema === tema);
+      
+
     const [pontos,setPontos] = useState(0);
-    console.log(temaSelecionado);
+    
     useEffect(() => {
         const novosPontos = sessionStorage.getItem("acertos");
         if(novosPontos)
@@ -32,7 +35,7 @@ export default function fimDeJogo() {
         <div className={`${styles.container} d-flex flex-column justify-content-center align-items-center w-100`}>
             <div className={styles.painel}>
                 <h1 className={styles.titulo}>Fim de jogo.</h1>
-                <p className={styles.pontuacao}>Você acerto {pontos} de {temaSelecionado.perguntas.length}.</p>
+                <p className={styles.pontuacao}>{!tema ? "Carregando" : temaSelecionado.perguntas.length}.</p>
                 <button className={styles.botaoVoltar} onClick={() => {
                     router.push("/tema")
                     setPontos(0);
