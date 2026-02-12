@@ -15,7 +15,10 @@ export default function Quest() {
     const { tema } = useTema();
 
     const temaSelecionado = perguntas.temas.find((t)=> t.tema === tema) || null;
-    
+    if(!temaSelecionado)
+    {
+        return <p>Carregando . . . </p>
+    }
     const botaoProximaPergunta = () => {
         if (perguntaAtual !== temaSelecionado.perguntas.length - 1) {
             return <button className={styles.botaoProximaPergunta} onClick={() => {
