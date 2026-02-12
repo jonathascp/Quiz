@@ -14,7 +14,7 @@ export default function Quest() {
     const [numeroDeAcertos, setNumeroDeAcertos] = useState(0);
     const { tema } = useTema();
 
-    const temaSelecionado = perguntas.temas.find((t)=> t.tema === tema);
+    const temaSelecionado = perguntas.temas.find((t)=> t.tema === tema) || null;
     
     const botaoProximaPergunta = () => {
         if (perguntaAtual !== temaSelecionado.perguntas.length - 1) {
