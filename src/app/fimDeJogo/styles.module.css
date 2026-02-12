@@ -3,11 +3,12 @@
 }
 
 .botaoVoltar {
-    width: 150px;
+    width: 170px;
     border: 1px solid #E6EEF3;
     background: transparent;
     color: #E6EEF3;
     padding: 5px;
+    
 }
 
 .painel {
