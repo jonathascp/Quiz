@@ -11,7 +11,10 @@ export default function fimDeJogo() {
     
       const temaSelecionado = perguntas.temas.find((t) => t.tema === tema) || null;
       
-
+      if(!temaSelecionado)
+      {
+        return <div>Carregando . . . </div>
+      }
     const [pontos,setPontos] = useState(0);
     
     useEffect(() => {
@@ -35,7 +38,7 @@ export default function fimDeJogo() {
         <div className={`${styles.container} d-flex flex-column justify-content-center align-items-center w-100`}>
             <div className={styles.painel}>
                 <h1 className={styles.titulo}>Fim de jogo.</h1>
-                <p className={styles.pontuacao}>{temaSelecionado?.perguntas?.length ?? "Carregando..."}.</p>
+                <p className={styles.pontuacao}>{`Você acertou ${pontos} de ${temaSelecionado.perguntas.length}` }.</p>
                 <button className={styles.botaoVoltar} onClick={() => {
                     router.push("/tema")
                     setPontos(0);

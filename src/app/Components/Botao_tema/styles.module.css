@@ -1,20 +1,26 @@
 .botao {
-    background: none;
-    padding: 5px 15px;
-    border: 2px solid #E6EEF3;
+    background: #1E293B;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  transition:  0.2s ease;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #F8FAFC;
 }
 
 .botao:hover {
-    background: #111827;
+   transform: translateY(-3px);
 }
 
-.botao > a {
+.botao>a {
     text-decoration: none;
     font-size: 1.2em;
     color: #E6EEF3;
 }
 
-.botao > a:hover {
+.botao>a:hover {
     text-decoration: none;
     font-size: 1.2em;
     color: #c7cccf;

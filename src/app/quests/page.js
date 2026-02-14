@@ -58,10 +58,10 @@ export default function Quest() {
     const verificarSeEstarCerto = () => {
         if (respostaSelecionada !== null) { 
             if (respostaSelecionada === temaSelecionado.perguntas[perguntaAtual].respostaSelecionada) {
-                return <p className={styles.contador}>Resposta correta !</p>
+                return <p className={styles.resultado}>Resposta correta !</p>
             }
             else {
-                return <p className={styles.contador}>Resposta incorreta !</p>
+                return <p className={styles.resultado}>Resposta incorreta !</p>
             }
 
         }
@@ -75,13 +75,13 @@ export default function Quest() {
     contagemRegressiva();
 
     return (
-        <div className={` container d-flex flex-column p-0 m-0 align-items-center justify-content-center`}>
+        <div className={`$ container d-flex flex-column p-0 m-0 align-items-center justify-content-center`}>
             <div className={`${styles.painel}`}>
-                <h1 className={`${styles.titulo}`}>Pergunta Nº{temaSelecionado.perguntas[perguntaAtual].id}</h1>
+                <h1 className={`${styles.titulo}`}>Pergunta Nº {temaSelecionado.perguntas[perguntaAtual].id}</h1>
                 <p className={`${styles.contador}`}>{contador}</p>
                 <div className="container d-flex flex-column p-0 m-0 align-items-center justify-content-center">
                     <h4 className={`${styles.pergunta}`}>{temaSelecionado.perguntas[perguntaAtual].titulo}</h4>
-                    {<> 
+                    {<div className={`${styles.optionsContainer}`}> 
                         {temaSelecionado.perguntas[perguntaAtual].opcoes.map((opcao) =>
 
                             <button
@@ -114,7 +114,7 @@ export default function Quest() {
                                 <p className={styles.contador}>Tempo esgotado</p>
                                 {botaoProximaPergunta()}
                             </div>}
-                    </>}
+                    </div>}
 
 
                 </div>
